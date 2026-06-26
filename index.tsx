@@ -77,7 +77,7 @@ function UndiscordTitleBarButton() {
                 }
             }}
             onContextMenu={openPanel}
-            tooltip={isOpen ? null : "Delete Messages (Undiscord)"}
+            tooltip={isOpen ? null : "Delete Messages (Vundiscord)"}
             icon={TrashIcon}
             selected={isOpen}
         />
@@ -85,8 +85,8 @@ function UndiscordTitleBarButton() {
 }
 
 export default definePlugin({
-    name: "Undiscord",
-    description: "Bulk delete messages in any Discord channel or DM. Original by victornpb.",
+    name: "Vundiscord",
+    description: "Bulk delete messages in any Discord channel or DM. Original Undiscord script by victornpb.",
     authors: [
         { name: "victornpb", id: 0n },
         { name: "Tetra_Sky", id: 406453997294190594n }
@@ -124,9 +124,4 @@ export default definePlugin({
         );
     },
 
-    toolboxActions: {
-        "Open Undiscord"() {
-            openPanel();
-        },
-    },
 });
