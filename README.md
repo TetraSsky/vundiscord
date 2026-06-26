@@ -50,7 +50,7 @@ You're now ready to use Vundiscord, on your browser (same, be sure to enable it 
 <img alt="Image" src="https://github.com/user-attachments/assets/e502e112-5678-4e21-816c-8618f8b99d11" />
 
 4. Monitor progress via the progress bar and log area
-<img alt="Image" src="https://github.com/user-attachments/assets/67da764b-3141-4340-be43-79fbe9127447" />
+<img alt="Image" src="https://github.com/user-attachments/assets/e0463797-b4a2-4c76-be43-3f24142a29b5" />
 
 ## Credits
 This plugin is built for and requires [Vencord](https://github.com/Vendicated/Vencord), a Discord client mod! Big thanks to them ❤️❤️❤️!
