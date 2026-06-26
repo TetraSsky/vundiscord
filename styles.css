@@ -1,0 +1,300 @@
+.vc-undiscord-panel {
+    display: flex;
+    flex-direction: column;
+    background: var(--background-surface-high);
+    border-radius: 8px;
+    box-shadow: var(--shadow-border),var(--shadow-high);
+    overflow: hidden;
+}
+
+.vc-undiscord-streamer-mode [data-sensitive] input {
+    -webkit-text-security: disc !important;
+}
+
+.vc-undiscord-header {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background: var(--bg-overlay-chat, var(--background-base-lower, var(--background-primary)));
+    cursor: move;
+    flex-shrink: 0;
+    height: 36px;
+    color: var(--icon-strong);
+}
+
+.vc-undiscord-header-title {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--interactive-text-active);
+}
+
+.vc-undiscord-header-btn {
+    cursor: pointer;
+    color: var(--interactive-icon-active, #949ba4);
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+}
+
+.vc-undiscord-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.vc-undiscord-sidebar {
+    width: 260px;
+    min-width: 260px;
+    overflow-y: auto;
+    padding: 12px;
+    background: var(--bg-overlay-4, var(--background-base-lowest, var(--background-secondary)));
+    border-right: 1px solid var(--border-subtle, #3f4147);
+}
+
+.vc-undiscord-section-title {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--header-secondary, #949ba4);
+    margin: 12px 0 8px;
+    letter-spacing: 0.02em;
+}
+
+.vc-undiscord-section-title:first-child {
+    margin-top: 0;
+}
+
+.vc-undiscord-input-row {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.vc-undiscord-input-row > :first-child {
+    flex: 1;
+}
+
+.vc-undiscord-input-row > button {
+    flex-shrink: 0;
+}
+
+.vc-undiscord-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 4px 0;
+    font-size: 13px;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.vc-undiscord-checkbox input[type="checkbox"] {
+    accent-color: var(--brand-experiment);
+}
+
+.vc-undiscord-divider {
+    border: none;
+    border-top: 1px solid var(--border-subtle);
+    margin: 12px 0;
+}
+
+.vc-undiscord-date-input {
+    width: 100%;
+    padding: 6px 8px;
+    border: none;
+    background: inherit;
+    color: var(--text-default);
+    font-size: 13px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.vc-undiscord-date-input::-webkit-calendar-picker-indicator {
+    filter: brightness(0) saturate(100%);
+    cursor: pointer;
+}
+
+.theme-dark .vc-undiscord-date-input::-webkit-calendar-picker-indicator {
+    filter: invert(0.6);
+}
+
+.vc-undiscord-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--bg-overlay-chat, var(--background-base-lower, var(--background-primary)));
+}
+
+.vc-undiscord-slider {
+    width: 100%;
+    accent-color: var(--brand-experiment);
+    margin: 4px 0 8px;
+}
+
+.vc-undiscord-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: var(--bg-overlay-2, var(--background-secondary-alt));
+    border-bottom: 1px solid var(--border-subtle);
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.vc-undiscord-toolbar-check {
+    white-space: nowrap;
+}
+
+.vc-undiscord-progress-container {
+    padding: 4px 12px;
+    background: var(--bg-overlay-2, var(--background-secondary-alt));
+}
+
+.vc-undiscord-progress {
+    width: 100%;
+    height: 6px;
+    accent-color: var(--brand-experiment);
+}
+
+.vc-undiscord-progress-text {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.vc-undiscord-log {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 12px;
+    font-family: var(--font-code);
+    font-size: 12px;
+    line-height: 1.6;
+    cursor: text;
+    user-select: text;
+}
+
+.vc-undiscord-log-empty {
+    color: var(--text-muted);
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-primary);
+}
+
+.vc-undiscord-log-entry {
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.vc-undiscord-log-level {
+    opacity: 0.6;
+}
+
+.vc-undiscord-log-debug { color: var(--text-muted); }
+.vc-undiscord-log-info { color: var(--blue-300); }
+.vc-undiscord-log-verb { color: var(--text-muted); }
+.vc-undiscord-log-warn { color: var(--yellow-300); }
+.vc-undiscord-log-error { color: var(--red-400); }
+.vc-undiscord-log-success { color: var(--green-360); }
+
+.vc-undiscord-footer {
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    background: var(--bg-overlay-2, var(--background-secondary-alt));
+    border-top: 1px solid var(--border-subtle);
+    flex-shrink: 0;
+    height: 30px;
+}
+
+.vc-undiscord-grab-t,
+.vc-undiscord-grab-b,
+.vc-undiscord-grab-l,
+.vc-undiscord-grab-r,
+.vc-undiscord-grab-tl,
+.vc-undiscord-grab-tr,
+.vc-undiscord-grab-bl,
+.vc-undiscord-grab-br {
+    position: absolute;
+    z-index: 10;
+}
+
+.vc-undiscord-grab-t {
+    top: -3px;
+    left: 8px;
+    right: 8px;
+    height: 6px;
+    cursor: ns-resize;
+}
+
+.vc-undiscord-grab-b {
+    bottom: -3px;
+    left: 8px;
+    right: 8px;
+    height: 6px;
+    cursor: ns-resize;
+}
+
+.vc-undiscord-grab-l {
+    left: -3px;
+    top: 8px;
+    bottom: 8px;
+    width: 6px;
+    cursor: ew-resize;
+}
+
+.vc-undiscord-grab-r {
+    right: -3px;
+    top: 8px;
+    bottom: 8px;
+    width: 6px;
+    cursor: ew-resize;
+}
+
+.vc-undiscord-grab-tl {
+    top: -3px;
+    left: -3px;
+    width: 12px;
+    height: 12px;
+    cursor: nwse-resize;
+}
+
+.vc-undiscord-grab-tr {
+    top: -3px;
+    right: -3px;
+    width: 12px;
+    height: 12px;
+    cursor: nesw-resize;
+}
+
+.vc-undiscord-grab-bl {
+    bottom: -3px;
+    left: -3px;
+    width: 12px;
+    height: 12px;
+    cursor: nesw-resize;
+}
+
+.vc-undiscord-grab-br {
+    bottom: -3px;
+    right: -3px;
+    width: 12px;
+    height: 12px;
+    cursor: nwse-resize;
+}
+
+.vc-undiscord-log::-webkit-scrollbar,
+.vc-undiscord-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.vc-undiscord-log::-webkit-scrollbar-thumb,
+.vc-undiscord-sidebar::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thin-thumb);
+    border-radius: 3px;
+}
+
+.vc-undiscord-log::-webkit-scrollbar-track,
+.vc-undiscord-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
