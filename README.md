@@ -41,9 +41,13 @@ You're now ready to use Vundiscord, on your browser (same, be sure to enable it 
 ## Usage
 
 1. Click the trash can icon in Discord's title bar to open Vundiscord
+<img alt="Image" src="https://github.com/user-attachments/assets/6e109fbb-120a-45d3-b04d-bed7dfb0446a" />
 2. Configure your settings (Author ID, Server ID, Channel ID, filters, delays, etc...)
-3. Click **▶ Delete** to start. Click **⏹ Stop** to abort at any time
+<img alt="Image" src="https://github.com/user-attachments/assets/8ef531eb-67a9-402b-98c1-05b9fc9a9406" />
+3. Click **▶ Delete** to start, *will prompt for confirmation*. (You can Click **⏹ Stop** to abort at any time)
+<img alt="Image" src="https://github.com/user-attachments/assets/e502e112-5678-4e21-816c-8618f8b99d11" />
 4. Monitor progress via the progress bar and log area
+<img alt="Image" src="https://github.com/user-attachments/assets/67da764b-3141-4340-be43-79fbe9127447" />
 
 ## Credits
 This plugin is built for and requires [Vencord](https://github.com/Vendicated/Vencord), a Discord client mod! Big thanks to them ❤️❤️❤️!
