@@ -57,5 +57,8 @@ This plugin is built for and requires [Vencord](https://github.com/Vendicated/Ve
 
 & **victornpb** - Original [Undiscord](https://github.com/victornpb/undiscord) author
 
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=TetraSsky/vundiscord&type=Date)](https://www.star-history.com/#TetraSsky/vundiscord&Date)
+
 ## License
 MIT License — See [LICENSE](LICENSE) for details.
