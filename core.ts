@@ -201,13 +201,23 @@ export class UndiscordCore {
                     break;
                 }
                 await this.deleteMessagesFromList();
+
+                if (this.state.delCount + this.state.failCount >= this.state.grandTotal) {
+                    this.state.running = false;
+                    break;
+                }
             } else if (this.state._skippedMessages.length > 0) {
                 this.state.offset += this.state._skippedMessages.length;
                 this.log("verb", "There's nothing we can delete on this page, checking next page...");
+            } else if (this.state.grandTotal > 0 && this.state.iterations < 2) {
+                this.log("warn", "API reported results but returned no messages. Retrying in 30s...");
+                await wait(30000);
+                continue;
             } else {
                 this.log("verb", "Ended because API returned an empty page.");
                 if (isJob) break;
                 this.state.running = false;
+                break;
             }
 
             this.log("verb", `Waiting ${(this.options.searchDelay / 1000).toFixed(2)}s before next page...`);
@@ -288,8 +298,9 @@ export class UndiscordCore {
         let resp: Response;
         try {
             this.beforeRequest();
-            resp = await fetch(API_SEARCH_URL + "search?" + params.toString(), {
+            resp = await fetch(API_SEARCH_URL + "search?" + params.toString() + "&_=" + Date.now(), {
                 headers: { "Authorization": this.options.authToken! },
+                cache: "no-store",
             });
             this.afterRequest();
         } catch (err) {
@@ -404,6 +415,7 @@ export class UndiscordCore {
             resp = await fetch(API_DELETE_URL, {
                 method: "DELETE",
                 headers: { "Authorization": this.options.authToken! },
+                cache: "no-store",
             });
             this.afterRequest();
         } catch (err) {
